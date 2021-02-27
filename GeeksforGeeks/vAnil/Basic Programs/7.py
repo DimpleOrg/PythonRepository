@@ -11,3 +11,7 @@ pi = 22/7
 area = pi * pow(r,2)
 
 print(f'Area is {area}')
+print(f'Area is {area}')
+print(f'Area is {area}')
+print(f'Area is {area}')
+print(f'Area is {area}')
