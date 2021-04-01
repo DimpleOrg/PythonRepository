@@ -5,14 +5,16 @@ Created on Wed Jan 20 00:28:24 2021
 @author: dimpl
 """
 import pygame
+from pygame.sprite import Sprite
 
 
-class GameCharacter:
+class GameCharacter(Sprite):
     """A class to manage game character"""
 
     def __init__(self, ai_game):
         """initialize the character and set its starting position"""
 
+        super().__init__()
         # we assign the screen
         # to an attribute of Ship, so we can access it easily in all the methods in this
         # class.
@@ -75,5 +77,7 @@ class GameCharacter:
 
     def center_ship(self):
         """Center the ship on the screen."""
+
         self.rect.midbottom = self.screen_rect.midbottom
         self.x = float(self.rect.x)
+        self.y = float(self.rect.y)
