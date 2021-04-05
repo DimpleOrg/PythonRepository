@@ -16,8 +16,6 @@ Created on Wed Mar 17 23:09:12 2021
 # Output : arr[] = [3, 4, 5, 6, 7, 1, 2]
 
 arr = [1, 2, 3, 4, 5, 6, 7]
-d = 2
-n = 7
 
 
 def rotate(d, n):
@@ -36,7 +34,12 @@ def reverse_list(start, end):
         start += 1
 
 
-#rotate_split(2, 7, arr)
-# rotate(2, 7)
+rotate(2, 7)
+print(arr)
+
+# --------------------------METHOD 2---------------------
+arr = [1, 2, 3, 4, 5, 6, 7]
+d = 2
+n = 7
 arr = arr[d:n]+arr[:d]
 print(arr)
