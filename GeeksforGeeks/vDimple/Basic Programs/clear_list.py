@@ -24,3 +24,10 @@ my_list = [6, 0, 4, 1]
 print(my_list)
 del my_list[:]
 print(my_list)
+
+# Method #5 : Using remove
+my_list = [6, 0, 4, 1]
+print(my_list)
+while my_list:
+    my_list.remove(my_list[0])
+print(my_list)
