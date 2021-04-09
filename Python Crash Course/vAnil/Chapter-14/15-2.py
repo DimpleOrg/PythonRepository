@@ -21,3 +21,4 @@ ax.tick_params(axis='both', labelsize=14)
 #ax.scatter(x, y, c='green',s=7)
 
 ax.scatter(x, y, c=y, cmap=plt.cm.plasma, s=10)
+plt.show()
