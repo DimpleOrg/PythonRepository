@@ -20,13 +20,18 @@ Output : output_list = [-1]
 
 list1 = [10, 20, 30, 20, 20, 30, 40, 50, -20, 60, 60, -20, -20]
 
+set1 = set()
+
+set2 = set()
+
 list2 = [list1[0]]
 
 for item in list1:
-    if item not in list2:
-        list2.append(item);
-        
+    if item not in set1:
+        set1.add(item)
+    else:
+        set2.add(item)
 
-print(list2)
+print(set2)
 
 

@@ -35,3 +35,9 @@ del xlist[1:5]
 print(*xlist)
 
 
+input_list = [12, 15, 3, 10]
+# given index of elements 
+unwanted = [0, 3, 2]
+for each in sorted(unwanted,reverse=True):
+    del input_list[each]
+print(*input_list)
