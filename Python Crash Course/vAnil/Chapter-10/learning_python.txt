@@ -1,0 +1,8 @@
+I learned about Python a lot in last 9 chapters.
+Python you can....Variables and Simple  Data Types
+Python you can....Lists
+Python you can....if, elif, else
+Python you can....Dictionaries 
+Python you can....User Input and While loop
+Python you can....Functions
+Python you can....Class
