@@ -7,7 +7,6 @@ Created on Sat Apr 17 09:58:21 2021
 
 import datetime
 import random
-import sys
 from matplotlib import animation
 import matplotlib.pyplot as plt
 import seaborn as sns
