@@ -14,6 +14,7 @@ import seaborn as sns
 
 def update(frame_number, rolls, faces, frequencies):
     
+    
     random.seed(datetime.datetime.now())
     for i in range(rolls):
         frequencies[random.randrange(1, 7) - 1] += 1
@@ -41,6 +42,6 @@ frequencies = [0] * 6
 
 die_animation = animation.FuncAnimation(
     figure, update, repeat=False, frames=number_of_frames,
-    interval=33, fargs=(rolls_per_frame, values, frequencies))
+    interval=50, fargs=(rolls_per_frame, values, frequencies))
 
 plt.show()
