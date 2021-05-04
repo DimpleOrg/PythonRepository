@@ -25,7 +25,7 @@ Created on Wed Apr 21 17:19:16 2021
 X = [[1, 7, 3], [3, 5, 6], [6, 8, 9]]
 Y = [[1, 1, 1, 2], [6, 7, 3, 0], [4, 5, 9, 1]]
 
-# METHOD 1- Using Simple Nested Loops
+# METHOD 1- Using Numpy
 import numpy as np
 
 result = np.dot(X, Y)
@@ -44,6 +44,26 @@ for i in range(len(X)):
         for k in range(len(Y)):
             res1[i][j] += X[i][k] * Y[k][j]
 print("\n", res1)
+
+
+# Alternate way for Mathod 2
+res3 = []
+# iterating by row of A
+
+for i in range(len(X)):
+    temp_list = []
+
+    # iterating by coloum by B
+    for j in range(len(Y[0])):
+        temp = 0
+
+        # iterating by rows of B
+        for k in range(len(Y)):
+            temp += X[i][k] * Y[k][j]
+        temp_list.append(temp)
+    res3.append(temp_list)
+
+print("\nRes3: ", res3)
 
 
 # Method 3: Matrix Multiplication Using List Comprehension
