@@ -19,7 +19,6 @@ string = "a"
 
 binSet = set('01')
 
-rSet = binSet.intersection(string)
 
 if len(set(string)) > 2:
     print('No')
